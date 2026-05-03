@@ -1283,7 +1283,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		shortDesc: "Holder's SpA is 1.5x if they have tokens. Special attacks remove 1 token from both sides.",
 		rating: 2,
 		fling: {
-			basePower: 100,
+			basePower: 120,
 			effect(target, source, move) {
 				source.side.removeFishingTokens(3);
 				target.side.removeFishingTokens(3);
@@ -1326,7 +1326,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		name: "Lemonomics industry connections card",
 		shortDesc: "Holder uses Fish Processing at the end of turn if Acid Rain is active. Single use.",
 		fling: {
-			basePower: 1,
+			basePower: 77,
 			effect(target, source, move) {
 				this.actions.useMove("Feebas Pro Shops", source);
 				this.actions.useMove("Feebas Pro Shops", source);
