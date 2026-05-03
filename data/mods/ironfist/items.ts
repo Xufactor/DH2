@@ -1200,7 +1200,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 					if (pokemon.volatiles['trapped'] || pokemon.volatiles['partiallytrapped']) {
 						if (pokemon.takeItem()) this.add('-enditem', target, 'Shrine of the Silver Monkey');
 					}
-					pokemon.switchFlag = true;
+					else pokemon.switchFlag = true;
 				}
 			}
 			if (pokemon.activeTurns % 2 == 1) {
