@@ -12,9 +12,7 @@ export const Formats: FormatData[] = [
 		banlist: ['Eviolite', 'Light Ball', 'Baton Pass', 'Ditto'],
 		teambuilderFormat: 'National Dex',
 		onValidateTeam(team, format) {
-			/**@type {{[k: string]: true}}*/
-			let speciesTable = {};
-			let allowedTiers = ['WM'];
+			let allowedTiers = ['woo'];
 			for (const set of team) {
 				let template = this.dex.species.get(set.species);
 				if (!allowedTiers.includes(template.tier)) {
@@ -31,19 +29,6 @@ export const Formats: FormatData[] = [
 		],
 		mod: 'woomod',
 		team: "random",
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Sleep Clause Mod', 'Data Mod', 'Mega Data Mod', 'Z-Move Clause'],
-		banlist: ['Eviolite', 'Light Ball', 'Baton Pass', 'Ditto'],
-		teambuilderFormat: 'National Dex',
-		onValidateTeam(team, format) {
-			/**@type {{[k: string]: true}}*/
-			let speciesTable = {};
-			let allowedTiers = ['WM'];
-			for (const set of team) {
-				let template = this.dex.species.get(set.species);
-				if (!allowedTiers.includes(template.tier)) {
-					return [set.species + ' is not legal in woomod.'];
-				}
-			}
-		},
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Species Clause', 'Sleep Clause Mod', 'Data Mod', 'Mega Data Mod'],
 	},
 ];

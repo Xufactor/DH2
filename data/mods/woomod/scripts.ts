@@ -1,5 +1,10 @@
 export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
+
+	teambuilderConfig: {
+		excludeStandardTiers: true,
+		customTiers: ["woo", "woober", "dwoo"],
+	},
 	// soothing prescence is fun and easy to code
 	actions: {
 		switchIn(pokemon, pos, sourceEffect, isDrag) {
