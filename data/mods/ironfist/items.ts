@@ -1318,6 +1318,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	ironwillribbon: {
 		name: "Iron Will Ribbon",
 		shortDesc: "Holder takes 20% less damage for each empty moveslot it has.",
+		fling: {
+			basePower: 80,
+			volatileStatus: "partiallytrapped",
+		},
 		onSourceModifyDamage(relayVar, target, source, move) {
 			this.chainModify(1 - (0.2 * target.moveSlots.length));
 		},
