@@ -31,7 +31,6 @@ After that, find the right section within the formats list that describes your m
 
 // Imports
 import { Formats as Abilitypos                  } from '../data/mods/abilitypos/formats';
-import { Formats as AGoldenExperience           } from '../data/mods/agoldenexperience/formats';
 import { Formats as Alternatium                 } from '../data/mods/alternatium/formats';
 import { Formats as AlternatiumEX               } from '../data/mods/alternatiumex/formats';
 import { Formats as BackToSinnoh                } from '../data/mods/backtosinnoh/formats';
@@ -180,7 +179,6 @@ import { Formats as PokemonThrone               } from '../data/mods/pokemonthro
 import { Formats as MoreBalancedHackmons        } from '../data/mods/morebalancedhackmons/formats';
 import { Formats as NaturalSelection            } from '../data/mods/naturalselection/formats';
 import { Formats as NotMyType                   } from '../data/mods/notmytype/formats';
-import { Formats as NukeButtons                 } from '../data/mods/nukebuttons/formats';
 import { Formats as OUTheorymons                } from '../data/mods/outheorymons/formats';
 import { Formats as Paleomons                   } from '../data/mods/paleomons/formats';
 import { Formats as Patratdex                   } from '../data/mods/patratdex/formats';
@@ -194,6 +192,7 @@ import { Formats as PonymonShowdown             } from '../data/mods/ponymonshow
 import { Formats as PublicDomain                } from '../data/mods/publicdomain/formats';
 import { Formats as RandomTandem                } from '../data/mods/randomtandem/formats';
 import { Formats as ReGeneration                } from '../data/mods/regeneration/formats';
+import { Formats as ResetMons                   } from '../data/mods/resetmons/formats';
 import { Formats as RegionalEvolutions          } from '../data/mods/regionalevolutions/formats';
 import { Formats as Restrictions                } from '../data/mods/restrictions/formats';
 import { Formats as ReturnToOrreTercera         } from '../data/mods/returntoorretercera/formats';
@@ -243,7 +242,7 @@ import { Formats as Woomod                      } from '../data/mods/woomod/form
 import { Formats as Worldbuilding               } from '../data/mods/worldbuilding/formats';
 //import { Formats as YayaMons                    } from '../data/mods/yayamons/formats';
 
-export const Formats: FormatList = [
+export const Formats: import('../sim/dex-formats').FormatList = [
 	///////////////////////////////////////////////////////////////
 	///////////////////// Gen 9 Pet Mods //////////////////////////
 	///////////////////////////////////////////////////////////////
@@ -309,6 +308,7 @@ export const Formats: FormatList = [
 	...gen1RBYCAP,
 	...ReGeneration,
 	...RegionalEvolutions,
+	...ResetMons,
 	...ReturnToOrreTercera,
 	...Roulettemons2,
 	...SecretSanta,
@@ -360,7 +360,6 @@ export const Formats: FormatList = [
 		column: 2,
 	},
 	...gen533Valuemons,
-	...AGoldenExperience,
     //...gen3AdvPlus,
 	...gen3AdvDeluxe,
 	...gen3Tradebacks,
@@ -403,7 +402,6 @@ export const Formats: FormatList = [
 	...MaadowrLostZone,
 	...MegaMania,
 	...gen1Metronome,
-	...NukeButtons,
 	...Solopet,
 	...gen1Moonside,
 	...TheBore,

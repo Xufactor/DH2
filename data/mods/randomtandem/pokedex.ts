@@ -1077,4 +1077,291 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 			],
 		],
 	},
+	dondozo: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'blissey',
+					item: 'heavydutyboots',
+					ability: 'naturalcure',
+					teraType: ['dark', 'water'],
+				},
+				['calmmind', 'softboiled'], ['seismictoss', 'shadowball', 'toxic']
+			],
+			[
+				{
+					species: 'clodsire',
+					item: ['heavydutyboots', 'leftovers'],
+					ability: ['unaware', 'waterabsorb'],
+					teraType: 'dark',
+				},
+				['recover', 'mortalspin'], ['earthquake', 'poisonjab', 'spikes', 'amnesia']
+			],
+			[
+				{
+					species: 'gliscor',
+					item: 'toxicorb',
+					ability: 'poisonheal',
+					teraType: ['normal', 'water'],
+				},
+				['protect', 'knockoff'], ['earthquake', 'swordsdance', 'facade']
+			],
+			[
+				{
+					species: 'Weezing-Galar',
+					item: 'heavydutyboots',
+					ability: 'Neutralizing Gas',
+					teraType: ['ghost', 'grass'],
+				},
+				['defog', 'shoreup'], ['strangesteam', 'willowisp', 'sludgebomb', 'toxic', 'corrosivegas']
+			],
+		],
+	},
+	hoopaunbound: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'conkeldurr',
+					item: 'flameorb',
+					ability: 'guts',
+					teraType: 'normal',
+				},
+				['closecombat', 'knockoff', 'facade', 'extremespeed']
+			],
+			[
+				{
+					species: 'porygon2',
+					item: 'eviolite',
+					ability: 'regenerator',
+					teraType: ['flying', 'ghost'],
+				},
+				['terablast', 'icebeam', 'recover', 'trickroom']
+			],
+			[
+				{
+					species: 'magearna',
+					item: 'ejectpack',
+					ability: 'magicbounce',
+					teraType: 'water',
+				},
+				['fleurcannon', 'mistyexplosion', 'spikes', 'trickroom']
+			],
+			[
+				{
+					species: 'torkoal',
+					item: 'choicespecs',
+					ability: 'drought',
+					teraType: 'grass',
+				},
+				['eruption', 'weatherball', 'hydrosteam', 'solarbeam']
+			],
+		],
+	},
+	kingambit: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'talonflame',
+					item: 'heavydutyboots',
+					ability: 'illusion',
+					teraType: 'flying',
+				},
+				['swordsdance', 'bravebird'], ['flareblitz', 'roost', 'willowisp', 'taunt']
+			],
+			[
+				{
+					species: 'zoroarkhisui',
+					item: ['heavydutyboots', 'airballoon'],
+					ability: 'illusion',
+					teraType: 'ghost',
+				},
+				['nastyplot', 'astralbarrage', 'focusblast', 'willowisp']
+			],
+			[
+				{
+					species: 'ironmoth',
+					item: ['heavydutyboots', 'airballoon'],
+					ability: 'illusion',
+					teraType: ['grass', 'ground', 'fire'],
+				},
+				['fierydance', 'sludgewave'], ['energyball', 'overheat', 'substitute', 'uturn', 'toxicspikes']
+			],
+			[
+				{
+					species: 'primarina',
+					item: 'choicespecs',
+					ability: 'illusion',
+					teraType: ['water', 'fairy', 'psychic'],
+				},
+				['hydropump', 'moonblast', 'icebeam', 'psychic']
+			],
+		],
+	},
+	quaquaval: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'dragonite',
+					item: 'dragoninite',
+					ability: 'multiscale',
+					teraType: 'dragon',
+				},
+				['roost', 'hurricane'], ['fierydance', 'icebeam', 'encore', 'dragonpulse']
+			],
+			[
+				{
+					species: 'scizor',
+					item: 'scizorite',
+					ability: 'technician',
+					teraType: 'steel',
+				},
+				['uturn', 'bulletpunch', 'knockoff', 'swordsdance']
+			],
+			[
+				{
+					species: 'typhlosionhisui',
+					item: ['choicescarf', 'choicespecs'],
+					ability: 'regenerator',
+					teraType: ['fire', 'fairy'],
+				},
+				['eruption', 'flamethrower', 'shadowball', 'focusblast']
+			],
+			[
+				{
+					species: 'weavile',
+					item: 'choiceband',
+					ability: 'longreach',
+					teraType: ['ghost', 'ice', 'dark'],
+				},
+				['tripleaxel', 'knockoff', 'iceshard', 'lowkick']
+			],
+		],
+	},
+	corviknight: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'froslass',
+					item: 'froslassite',
+					ability: 'cursedbody',
+					teraType: 'ice',
+				},
+				['nastyplot', 'blizzard', 'thunderbolt', 'shadowball']
+			],
+			[
+				{
+					species: 'emboar',
+					item: 'emboarite',
+					ability: 'reckless',
+					teraType: 'fire',
+				},
+				['bulkup', 'flareblitz', 'closecombat', 'powerwhip']
+			],
+			[
+				{
+					species: 'giratinaorigin',
+					item: 'griseouscore',
+					ability: 'levitate',
+					teraType: ['fairy', 'steel'],
+				},
+				['shadowball', 'dragontail'], ['drainpunch', 'thunderwave', 'shadowsneak']
+			],
+			[
+				{
+					species: 'swampert',
+					item: ['leftovers', 'heavydutyboots'],
+					ability: 'torrent',
+					teraType: ['poison', 'steel'],
+				},
+				['earthquake', 'recover'], ['stealthrock', 'knockoff', 'flipturn']
+			],
+		],
+	},
+	brambleghast: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'floetteeternal',
+					item: 'floettite',
+					ability: 'symbiosis',
+					teraType: 'fairy',
+				},
+				['calmmind', 'lightofruin', 'drainingkiss', 'burningjealousy']
+			],
+			[
+				{
+					species: 'arcaninehisui',
+					item: ['choiceband', 'choicescarf'],
+					ability: 'rockhead',
+					teraType: ['rock', 'grass'],
+				},
+				['headsmash', 'flareblitz', 'woodhammer', 'closecombat']
+			],
+			[
+				{
+					species: 'Goodra-Hisui',
+					item: 'assaultvest',
+					ability: ['sapsipper', 'shellarmor'],
+					teraType: ['flying', 'fairy'],
+				},
+				['heavyslam', 'dragontail'], ['rapidspin', 'knockoff', 'flamethrower', 'icebeam']
+			],
+			[
+				{
+					species: 'slowbro',
+					item: 'heavydutyboots',
+					ability: 'Regenerator',
+					teraType: ['fairy', 'Poison'],
+				},
+				['teleport', 'slackoff'], ['surf', 'thunderwave', 'futuresight']
+			],
+		],
+	},
+	hatterene: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'charizard',
+					item: 'charizarditex',
+					ability: 'blaze',
+					teraType: 'fire',
+				},
+				['dragondance', 'flareblitz', 'dragonclaw', 'roost']
+			],
+			[
+				{
+					species: 'rotomwash',
+					item: ['leftovers', 'heavydutyboots'],
+					ability: 'levitate',
+					teraType: ['ghost', 'dragon'],
+				},
+				['defog', 'painsplit', 'hydropump', 'voltswitch']
+			],
+			[
+				{
+					species: 'meganium',
+					item: 'meganiumite',
+					ability: 'overgrow',
+					teraType: 'grass',
+				},
+				['solarbeam', 'dazzlinggleam', 'synthesis', 'weatherball']
+			],
+			[
+				{
+					species: 'clodsire',
+					item: ['choiceband', 'leftovers'],
+					ability: 'hugepower',
+					teraType: ['ground', 'water'],
+				},
+				['earthquake', 'gunkshot', 'stoneedge', 'liquidation']
+			],
+		],
+	},
 };

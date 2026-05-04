@@ -4861,4 +4861,37 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	tortonate: {
 		tier: "OU",
 	},
+	beewark: {
+		tier: "OU",
+	},
+	pidgeaether: {
+		tier: "OU",
+	},
+	gorochu: {
+		tier: "OU",
+	},
+	pikaraichu: {
+		tier: "OU",
+	},
+	cryognaw: {
+		tier: "OU",
+	},
+	snorest: {
+		tier: "OU",
+	},
+	freezeress: {
+		tier: "OU",
+	},
+	crabarbarian: {
+		tier: "OU",
+	},
+	wrecksadrill: {
+		tier: "OU",
+	},
+	kandelabrum: {
+		tier: "OU",
+	},
+	goldeliath: {
+		tier: "OU",
+	},
 };
