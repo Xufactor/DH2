@@ -2014,6 +2014,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		},
 		flags: {},
 		name: "Class Dynamics",
+		shortDesc: "More tokens than opponent: Magic Guard. Less: moves first.",
 	},
 	genderambiguity: {
 		onSourceModifyAtkPriority: 6,
@@ -2115,7 +2116,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},
 	withoutlove: {
 		onStart(pokemon) {
-			if (pokemon.species.baseSpecies !== 'Kanon' || attacker.transformed) return;
+			if (pokemon.species.name !== 'Kanon' || attacker.transformed) return;
 			if (pokemon.side.fishingTokens >= 19) {
 				pokemon.side.removeFishingTokens(pokemon.side.fishingTokens);
 				pokemon.formeChange('Kanon-Blue-Sea', this.effect, true);

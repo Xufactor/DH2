@@ -4590,7 +4590,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		pp: 1,
 		desc: "User faints. Removes hazards from the user's side.",
 		shortDesc: "User faints. Removes hazards from the user's side.",
-		priority: 0,
+		priority: 1,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
 			this.attrLastMove('[still]');

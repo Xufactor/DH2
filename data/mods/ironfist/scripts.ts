@@ -530,7 +530,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 				canTera = true;
 				type = 'Steel';
 			}
-			if (pokemon.species.name === 'Boogerpon-CLOWNERSTONE') {
+			if (pokemon.species.name === 'Boogerpon-CLOWNERSTONE' && type === 'Grass') {
 				canTera = true;
 				type = 'Silly';
 			}
