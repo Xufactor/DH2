@@ -1362,6 +1362,22 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	ipgrabberlink: {
 		fling: {
+			basePower: 40,
+			effect(target, source, move) {
+				const temp = this.sample(target.moveSlots);
+				const moveSlot = this.dex.moves.get(temp.id);
+				if (moveSlot === null) return;
+				const learnedMove = {
+					move: moveSlot,
+					id: moveSlot.id,
+					pp: moveSlot.pp,
+					maxpp: moveSlot.pp,
+					target: moveSlot.target,
+					disabled: false,
+					used: false,
+				};
+				pokemon.moveSlots[pokemon.moveSlots.length] = learnedMove;
+			},
 		},
 		name: "IP Grabber Link",
 		shortDesc: "On switchin, if holder has <4 moves, copy opponent's moves and gain 0.1x power each time.",
@@ -1394,11 +1410,39 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	'ironfistslate13': {
 		name: "Iron Fist Slate 13",
 		shortDesc: "On switch-in, starts Slate 13. Also boosts damage by x1.3. Announces itself when used.",
+		fling: {
+			basePower: 13,
+			effect(target, source, move) {
+				this.add('-message', `https://www.smogon.com/forums/threads/iron-fist-slate-14-submissions.3748853/page-32`);
+			},
+		},
 		onSwitchIn(pokemon) {
 			this.add('-message', `${pokemon.name} started slate 13 or something idfk`);
 		},
 		onModifyDamage(damage, source, target, move) {
 			return this.chainModify([5324, 4096]);
+		},
+	},
+	lemonganite: {
+		name: "Lemonganite",
+		shortDesc: "If held by a Lemonganium, this item allows it to Lemonga Evolve in battle.",
+		megaStone: "Lemonganium-Lemonga",
+		megaEvolves: "Lemonganium",
+		itemUser: ["Lemonganium"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+	},
+	biganvilite: {
+		name: "BIG ANVILITE",
+		shortDesc: "If held by a BIG ANVIL, this item allows it to Mega Evolve in battle.",
+		megaStone: "BIG ANVIL-MEGA",
+		megaEvolves: "BIG ANVIL",
+		itemUser: ["BIG ANVIL"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
 		},
 	},
 }

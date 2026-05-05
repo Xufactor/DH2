@@ -137,7 +137,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		num: -15,
 		types: ["Fairy"],
 		baseStats: {hp: 60, atk: 130, def: 110, spa: 65, spd: 65, spe: 95},
-		abilities: {0: "Gex Server", 1: "MILF", H: "Pixilate"},
+		abilities: {0: "Gex Server", 1: "MILF", H: "Pixilate", S: "Pride Rally"},
 	},
 	ohmyrod: {
 		name: "Ohmyrod",
@@ -314,7 +314,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		num: -33,
 		types: ["Fighting", "Flying"],
 		baseStats: {hp: 90, atk: 115, def: 90, spa: 90, spd: 80, spe: 100},
-		abilities: {0: "Sniper", 1: "MILF", H: "Stamina"},
+		abilities: {0: "Pride Rally", 1: "MILF", H: "Stamina"},
 		weightkg: 70.0,
 	},
 	cascoon: {
@@ -1061,7 +1061,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		num: -102,
 		types: ["Bug", "Dark"],
 		baseStats: {hp: 71, atk: 102, def: 78, spa: 52, spd: 55, spe: 92},
-		abilities: {0: "Swarm", 1: "Tinted Lens", H: "just the birds"},
+		abilities: {0: "Kyrum Aura", 1: "Tinted Lens", H: "just the birds"},
 		weightkg: 17.5,
 	},
 	raccoon: {
@@ -1453,7 +1453,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		gender: "M",
 		types: ["Silly"],
 		baseStats: {hp: 100, atk: 80, def: 85, spa: 85, spd: 140, spe: 35},
-		abilities: {0: "Bon Appetit", 1: "Oblivious", H: "Cloud Nine"},
+		abilities: {0: "Bon Appetit", 1: "Pride Rally", H: "Cloud Nine"},
 		weightkg: 94.3,
 	},
 	citrusjams: {
@@ -1823,6 +1823,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Electric Surge", 1: "Intimidate", H: "Zinzolin's Resolve"},
 		weightkg: 10.5,
 		evos: null,
+		prevo: null,
 	},
 	fatfuck: {
 		num: -200,
@@ -1845,7 +1846,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	flygonplus: {
 		num: -199,
-		name: "Flygon",
+		name: "Flygon-Plus",
+		baseSpecies: "Flygon",
+		forme: "Plus",
 		types: ["Bug", "Dragon"],
 		gen: 3,
 		hoenn: true,
@@ -1928,6 +1931,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 80, def: 120, spa: 80, spd: 120, spe: 100},
 		abilities: {0: "Shields Up"},
 		weightkg: 40.0,
+		cosmeticFormes: null,
 	},
 	miniorred: {
 		num: -190,
@@ -1939,6 +1943,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Shields Up"},
 		weightkg: 0.3,
 		requiredTeraType: "Fire",
+		isCosmeticForme: null,
 	},
 	miniororange: {
 		num: -190,
@@ -1950,6 +1955,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Shields Up"},
 		weightkg: 0.3,
 		requiredTeraType: "Ground",
+		isCosmeticForme: null,
 	},
 	minioryellow: {
 		num: -190,
@@ -1961,6 +1967,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Shields Up"},
 		weightkg: 0.3,
 		requiredTeraType: "Lemon",
+		isCosmeticForme: null,
 	},
 	miniorgreen: {
 		num: -190,
@@ -1972,6 +1979,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Shields Up"},
 		weightkg: 0.3,
 		requiredTeraType: "Silly",
+		isCosmeticForme: null,
 	},
 	miniorblue: {
 		num: -190,
@@ -1983,6 +1991,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Shields Up"},
 		weightkg: 0.3,
 		requiredTeraType: "Flying",
+		isCosmeticForme: null,
 	},
 	miniorindigo: {
 		num: -190,
@@ -1994,6 +2003,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Shields Up"},
 		weightkg: 0.3,
 		requiredTeraType: "Water",
+		isCosmeticForme: null,
 	},
 	miniorviolet: {
 		num: -190,
@@ -2005,13 +2015,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Shields Up"},
 		weightkg: 0.3,
 		requiredTeraType: "Ghost",
+		isCosmeticForme: null,
 	},
 	kanon: {
 		num: -189,
 		name: "Kanon",
 		types: ["Dark", "Silly"],
 		baseStats: {hp: 80, atk: 67, def: 86, spa: 116, spd: 119, spe: 60},
-		abilities: {0: "Without Love"},
+		abilities: {0: "Without Love..."},
 		weightkg: 6.7,
 	},
 	kanonbluesea: {
@@ -2021,7 +2032,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		forme: "Blue-Sea",
 		types: ["Dark", "Silly"],
 		baseStats: {hp: 80, atk: 67, def: 86, spa: 136, spd: 100, spe: 119},
-		abilities: {0: "Without Love"},
+		abilities: {0: "Without Love..."},
 		weightkg: 6.7,
 	},
 	marlboro: {

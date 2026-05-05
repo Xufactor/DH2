@@ -15064,12 +15064,11 @@ export const Learnsets: {[speciesid: string]: ModdedLearnsetData} = {
 
 	charjabug: {
 		learnset: {
-			inherit: true,
 			acidspray: ["9L1"],
 			acrobatics: ["9L1"],
 			attackorder: ["9L1"],
 			attract: ["9L1"],
-			automotize: ["9L1"],
+			autotomize: ["9L1"],
 			barrage: ["9L1"],
 			batonpass: ["9L1"],
 			bite: ["9L1"],
@@ -15766,7 +15765,7 @@ export const Learnsets: {[speciesid: string]: ModdedLearnsetData} = {
 			knockoff: ["9L1"],
 			mewing: ["9L1"],
 			powerwhip: ["9L1"],
-			grassyslide: ["9L1"],
+			grassyglide: ["9L1"],
 			slackoff: ["9L1"],
 		},
 	},
@@ -16022,7 +16021,7 @@ export const Learnsets: {[speciesid: string]: ModdedLearnsetData} = {
 			evilscaryuturn: ["9L1"],
 			nightslash: ["9L1"],
 			payback: ["9L1"],
-			looksmaxknuckle: ["9L1"],
+			looksmaxxknuckle: ["9L1"],
 			darkpulse: ["9L1"],
 			snarl: ["9L1"],
 			thief: ["9L1"],

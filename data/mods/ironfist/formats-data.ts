@@ -80,7 +80,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	crabominable: {
-		tier: "Unviable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	samurottsinnoh: {
@@ -197,7 +197,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	hitmontop: {
-		tier: "Unviable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	zelda: {
@@ -513,7 +513,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	minunandplusled: {
-		tier: "Unviable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	silvallystellar: {
