@@ -3260,7 +3260,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	//slate 9
 	trumpcard: {
 		inherit: true,
-		desc: "More power the fewer PP this move has left. Now has 40/60/90/120/250 base power, respectively.",
+		desc: "More power the fewer PP this move has left. Now has 40/60/90/120/250 base power, respectively. This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes.",
+		shortDesc: "Phys if Atk > SpA, 40/60/90/150/250 BP per -PP.",
 		basePowerCallback(source, target, move) {
 			const callerMoveId = move.sourceEffect || move.id;
 			const moveSlot = callerMoveId === 'instruct' ? source.getMoveData(move.id) : source.getMoveData(callerMoveId);
@@ -4625,7 +4626,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 			this.add('-anim', pokemon, "Meteor Beam", target);
 		},
 		onTry(source) {
-			if (source.species.baseSpecies === 'Minior') {
+			if (source.species.baseSpecies === 'Minior-Meteor') {
 				return;
 			}
 			this.attrLastMove('[still]');
@@ -4637,12 +4638,11 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onModifyType(move, pokemon) {
-			if (pokemon.species.baseSpecies !== 'Minior' || pokemon.transformed) return;
-			let targetForme = '';
-			let targetType = '';
+			if (pokemon.species.baseSpecies !== 'Minior-Meteor' || pokemon.transformed) return;
+			console.log(pokemon.set);
 			switch (pokemon.set.teraType) {
 				case 'Fire':
-					pokemon.formeChange('Minior-Red');
+					pokemon.formeChange('Minior');
 					move.type = pokemon.set.teraType;
 					break;
 				case 'Ground':

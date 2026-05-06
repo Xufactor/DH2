@@ -2097,17 +2097,17 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},
 	shieldsup: {
 		onStart(pokemon) {
-			if (attacker.species.baseSpecies !== 'Minior' || attacker.transformed) return;
+			if (pokemon.species.baseSpecies !== 'Minior-Meteor' || pokemon.transformed) return;
 			pokemon.addVolatile('ability:levitate');
 			if (!['Fire', 'Ground', 'Lemon', 'Silly', 'Flying', 'Water', 'Ghost'].includes(pokemon.set.teraType)) pokemon.set.teraType = 'Fire';
 		},
 		onModifyMovePriority: 1,
 		onModifyMove(move, attacker, defender) {
-			if (attacker.species.baseSpecies !== 'Minior' || attacker.transformed) return;
+			if (attacker.species.baseSpecies !== 'Minior-Meteor' || attacker.transformed) return;
 			if (move.category === 'Status') {
-				attacker.formeChange('Minior');
+				attacker.formeChange('Minior-Meteor');
 				const types = ['Fire', 'Ground', 'Lemon', 'Silly', 'Flying', 'Water', 'Ghost'];
-				attacker.set.teraType = types.indexOf(attacker.set.teraType) + 1;
+				attacker.set.teraType = types[(types.indexOf(attacker.set.teraType) + 1) % 7];
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
