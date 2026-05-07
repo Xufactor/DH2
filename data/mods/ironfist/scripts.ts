@@ -530,7 +530,9 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 				canTera = true;
 				type = 'Steel';
 			}
-			if (pokemon.species.name === 'Boogerpon-CLOWNERSTONE' && type === 'Grass') {
+			console.log(pokemon.species.id);
+			if (pokemon.species.id === 'boogerponclownerstone' && type === 'Grass') {
+				console.log('hi');
 				canTera = true;
 				type = 'Silly';
 			}
@@ -543,7 +545,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 				pokemon.addedType = '';
 				pokemon.knownType = true;
 				pokemon.apparentType = type;
-				if (pokemon.species.baseSpecies === 'Boogerpon-CLOWNERSTONE') {
+				if (pokemon.species.id === 'boogerponclownerstone') {
 					pokemon.formeChange('boogerponclownerstonetera', null, true);
 				}
 				if (pokemon.species.name === 'Terapagos-Terastal' && type === 'Stellar') {
