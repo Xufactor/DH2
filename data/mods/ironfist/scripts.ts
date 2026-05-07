@@ -530,7 +530,6 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 				canTera = true;
 				type = 'Steel';
 			}
-			console.log(pokemon.species.id);
 			if (pokemon.species.id === 'boogerponclownerstone' && type === 'Grass') {
 				canTera = true;
 				type = 'Silly';
