@@ -1841,7 +1841,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		gen: 3,
 		hoenn: true,
 		baseStats: {hp: 80, atk: 100, def: 80, spa: 100, spd: 80, spe: 100},
-		abilities: {0: "Levitate", H: "ill get a mega this time i swear"},
+		abilities: {0: "Levitate", H: "i'll get a mega this time i swear"},
 		weightkg: 82.0,
 	},
 	flygonplus: {
@@ -1853,7 +1853,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		gen: 3,
 		hoenn: true,
 		baseStats: {hp: 82, atk: 122, def: 102, spa: 122, spd: 102, spe: 122},
-		abilities: {0: "ill get a mega this time i swear"},
+		abilities: {0: "i'll get a mega this time i swear"},
 		weightkg: 82.0,
 	},
 	vishzolt: {
