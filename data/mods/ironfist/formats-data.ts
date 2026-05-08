@@ -867,7 +867,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "Untested",
 		doublesTier: "DIF",
 	},
-	minior: {
+	miniormeteor: {
 		tier: "Untested",
 		doublesTier: "DIF",
 	},

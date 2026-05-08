@@ -1841,7 +1841,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		gen: 3,
 		hoenn: true,
 		baseStats: {hp: 80, atk: 100, def: 80, spa: 100, spd: 80, spe: 100},
-		abilities: {0: "Levitate", H: "ill get a mega this time i swear"},
+		abilities: {0: "Levitate", H: "i'll get a mega this time i swear"},
 		weightkg: 82.0,
 	},
 	flygonplus: {
@@ -1853,7 +1853,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		gen: 3,
 		hoenn: true,
 		baseStats: {hp: 82, atk: 122, def: 102, spa: 122, spd: 102, spe: 122},
-		abilities: {0: "ill get a mega this time i swear"},
+		abilities: {0: "i'll get a mega this time i swear"},
 		weightkg: 82.0,
 	},
 	vishzolt: {
@@ -1924,19 +1924,19 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		weightkg: 201.0,
 		requiredItem: "Lemonganite",
 	},
-	minior: {
+	miniormeteor: {
 		num: -190,
-		name: "Minior",
+		name: "Minior-Meteor",
 		types: ["Rock"],
 		baseStats: {hp: 80, atk: 80, def: 120, spa: 80, spd: 120, spe: 100},
 		abilities: {0: "Shields Up"},
 		weightkg: 40.0,
 		cosmeticFormes: null,
 	},
-	miniorred: {
+	minior: {
 		num: -190,
-		name: "Minior-Red",
-		baseSpecies: "Minior",
+		name: "Minior",
+		baseSpecies: "Minior-Meteor",
 		forme: "Red",
 		types: ["Rock", "Fire"],
 		baseStats: {hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100},
@@ -1948,7 +1948,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	miniororange: {
 		num: -190,
 		name: "Minior-Orange",
-		baseSpecies: "Minior",
+		baseSpecies: "Minior-Meteor",
 		forme: "Orange",
 		types: ["Rock", "Ground"],
 		baseStats: {hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100},
@@ -1960,7 +1960,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	minioryellow: {
 		num: -190,
 		name: "Minior-Yellow",
-		baseSpecies: "Minior",
+		baseSpecies: "Minior-Meteor",
 		forme: "Yellow",
 		types: ["Rock", "Lemon"],
 		baseStats: {hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100},
@@ -1972,7 +1972,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	miniorgreen: {
 		num: -190,
 		name: "Minior-Green",
-		baseSpecies: "Minior",
+		baseSpecies: "Minior-Meteor",
 		forme: "Green",
 		types: ["Rock", "Silly"],
 		baseStats: {hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100},
@@ -1984,7 +1984,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	miniorblue: {
 		num: -190,
 		name: "Minior-Blue",
-		baseSpecies: "Minior",
+		baseSpecies: "Minior-Meteor",
 		forme: "Blue",
 		types: ["Rock", "Flying"],
 		baseStats: {hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100},
@@ -1996,7 +1996,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	miniorindigo: {
 		num: -190,
 		name: "Minior-Indigo",
-		baseSpecies: "Minior",
+		baseSpecies: "Minior-Meteor",
 		forme: "Indigo",
 		types: ["Rock", "Water"],
 		baseStats: {hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100},
@@ -2008,7 +2008,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	miniorviolet: {
 		num: -190,
 		name: "Minior-Violet",
-		baseSpecies: "Minior",
+		baseSpecies: "Minior-Meteor",
 		forme: "Violet",
 		types: ["Rock", "Ghost"],
 		baseStats: {hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100},

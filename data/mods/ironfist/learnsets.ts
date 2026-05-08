@@ -15968,7 +15968,7 @@ export const Learnsets: {[speciesid: string]: ModdedLearnsetData} = {
 			yawn: ["9L1"],
 		},
 	},
-	minior: {
+	miniormeteor: {
 		learnset: {
 			stoneedge: ["9L1"],
 			rockslide: ["9L1"],
